@@ -439,39 +439,40 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3.5rem;
-      align-items: start;
+      align-items: stretch;
     }
 
     .about-text {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
 
     .about-text p {
       color: var(--muted);
-      margin-bottom: 1.15rem;
+      margin: 0;
       font-size: 0.95rem;
-      line-height: 1.75;
-    }
-
-    .about-text p:last-child {
-      margin-bottom: 0;
+      line-height: 1.7;
     }
 
     .about-details {
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
+      justify-content: space-between;
+      height: 100%;
+      gap: 0.8rem;
     }
 
     .detail-row {
       display: flex;
       align-items: center;
       gap: 1rem;
-      padding: 0.9rem 1.2rem;
+      padding: 0.85rem 1.2rem;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
+      flex: 1;
       transition: border-color 0.2s, transform 0.2s;
     }
 
@@ -1119,11 +1120,10 @@
     <h2 class="section-title reveal">Who I Am</h2>
     <div class="about-grid reveal">
       <div class="about-text">
-        <p>I'm a final-year B.E. Information Technology student from Terna Engineering College, Navi Mumbai, graduating in 2026 with a CGPA of 7.8/10. My foundation in information technology has fostered a strong understanding of software design principles, database architecture, and full-stack engineering.</p>
-        <p>Currently working as a <strong>Software Developer at RLFB (Riamona Luxury and Fashion Brands)</strong>, I specialize in <strong>Odoo Enterprise ERP customization</strong> and Python backend development. I collaborate directly with luxury retail clients to analyze complex workflows and build tailored modules across Sales, Inventory, CRM, Purchasing, and Financial Accounting.</p>
-        <p>My core technical stack centers around <strong>Python</strong>, <strong>PostgreSQL</strong>, and <strong>RESTful API development</strong>. To ensure high availability and smooth delivery, I containerize application services using <strong>Docker</strong> and manage deployment pipelines on <strong>Railway</strong> cloud platform.</p>
-        <p>Beyond ERP systems, I have engineered full-stack web applications using <strong>Java, Spring Boot, and React</strong> across health-tech and inventory management domains — always prioritizing clean code architecture, security, and intuitive user experience.</p>
-        <p>Outside of software engineering, I've served as a <strong>Training &amp; Placement Cell Secretary</strong> and dedicated 2 years as an <strong>NSS Volunteer</strong> — leadership roles that strengthened my communication, strategic planning, and team collaboration abilities.</p>
+        <p>I'm a final-year B.E. Information Technology student from Terna Engineering College, Navi Mumbai, graduating in 2026 with a CGPA of 7.8/10. My academic background has cultivated a strong foundation in core computer science, software engineering principles, and enterprise application architecture.</p>
+        <p>Currently working as a <strong>Software Developer at RLFB (Riamona Luxury and Fashion Brands)</strong>, I focus on <strong>Odoo Enterprise ERP customization</strong> and Python backend development, architecting tailored modules across Sales, Inventory, CRM, Purchasing, and Financial Accounting for luxury retail clients.</p>
+        <p>My core technical stack centers on <strong>Python, PostgreSQL, and RESTful APIs</strong>, combined with containerized microservices using <strong>Docker</strong> and cloud deployments on <strong>Railway</strong> platform to deliver high-availability, scalable software solutions.</p>
+        <p>Beyond technical engineering, I've served as a <strong>Training &amp; Placement Cell Secretary</strong> and dedicated 2 years as an <strong>NSS Volunteer</strong> — leadership experiences that honed my communication, strategic planning, and team collaboration skills.</p>
       </div>
       <div class="about-details">
         <div class="detail-row">
